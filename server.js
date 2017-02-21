@@ -17,7 +17,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'Scan2.jpg'));
 });
 app.get('/page1',function(req,res){
-    res.sendText('Your First Page');
+    res.send('Your First Page');
 });
 
 
