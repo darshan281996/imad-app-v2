@@ -4,7 +4,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 var page1={
-    title:'Page 1|Darshan Trivedi',
+    title:'Page 1| Darshan Trivedi',
     heading:'About Me',
     content:`<div class="page1body">
     <div>
