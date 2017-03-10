@@ -1,9 +1,29 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-var times=0;
 var app = express();
 app.use(morgan('combined'));
+var page1={
+    title:'Page 1|Darshan Trivedi',
+    heading:'About Me',
+    content:`<div class="page1body">
+    <div>
+        <a href="/">Home</a>
+    </div>
+    <hr/>
+    <h1>
+        First Heading of the Page
+    </h1>
+    <p>
+        First page's content
+    </p>
+    <hr/>
+    <p1>
+        The site is visited for: 
+    </p1>
+</div>`
+    
+};
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -12,13 +32,39 @@ app.get('/', function (req, res) {
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-
+function createtemplate(data){
+    var heading=data.heading;
+    var title=data.title;
+    var HTMLTemplate=`<html>
+<head>
+     <link href="/ui/style.css" rel="stylesheet" />
+    <title>
+        ${title}
+    </title>
+   
+</head>
+<div class="page1body">
+    <div>
+        <a href="/">Home</a>
+    </div>
+    <hr/>
+    <h1>
+        ${heading}
+    </h1>
+    <p>
+        First page's content
+    </p>
+    <hr/>
+</div>
+</html>`;
+return HTMLTemplate;
+}
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
-  times++;
+
 });
 app.get('/page1',function(req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'page1.html'));
+    res.send(createtemplate(page1));
 });
 
 
