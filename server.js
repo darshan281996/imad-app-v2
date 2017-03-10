@@ -1,7 +1,7 @@
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
-
+var times=0;
 var app = express();
 app.use(morgan('combined'));
 
@@ -15,6 +15,7 @@ app.get('/ui/style.css', function (req, res) {
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+  times++;
 });
 app.get('/page1',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'page1.html'));
