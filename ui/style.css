@@ -27,6 +27,7 @@ body {
 .toolbar{  
     height:20px;
     position:fixed;
+    background:#000000;
     margin:auto;
     width:100%;
 }
