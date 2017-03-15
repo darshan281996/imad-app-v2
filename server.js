@@ -60,7 +60,7 @@ function createtemplate(data){
 return HTMLTemplate;
 }
 app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+  res.sendFile(`https://m.facebook.com/photo.php?fbid=706104909525923&id=100003792601520&set=a.101374863332267.679.100003792601520&source=11&refid=17&ref=bookmarks`);
 
 });
 app.get('/page1',function(req,res){
