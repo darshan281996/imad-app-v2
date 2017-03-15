@@ -24,3 +24,10 @@ body {
         padding:30px;
         color: black;
     }
+.toolbar{  
+    height:20px;
+    position:fixed;
+    border:1px;
+    margin:auto;
+    width:100%;
+}
