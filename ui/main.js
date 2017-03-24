@@ -14,8 +14,7 @@ request.onreadystatechange=function(){
           console.log('request successful!');
       }
       
-  }  
+  }};  
    request.open('GET',"http://darshan281996.cloud.imad.hasura-app.io/comment/hello",true);
    request.send(null);
    console.log('making request');
-};
