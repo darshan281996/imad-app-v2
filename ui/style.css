@@ -25,9 +25,17 @@ body {
         color: black;
     }
 .button{ 
+    margin:5px;
     padding:5px;
     background:#000000;
-    margin:auto;
     color:white;
     text-align:center;
+}
+.inputname{
+    margin:5px;
+    padding:7px;
+    font-weight:bold;
+    color:#000000;
+    
+    
 }
