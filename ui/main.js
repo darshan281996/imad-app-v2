@@ -24,6 +24,6 @@ getdata.onreadystatechange=function(){
       }
       
   }};  
-   request.open('GET',"http://darshan281996.imad.hasura-app.io/comment/hello",true);
-   request.send(null);
+   getdata.open('GET',"http://darshan281996.imad.hasura-app.io/comment/hello",true);
+   getdata.send(null);
    console.log('making request');
