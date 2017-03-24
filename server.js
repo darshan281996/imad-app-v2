@@ -6,7 +6,7 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
+var comment;
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -22,8 +22,8 @@ app.get('/page1',function(req,res){
 });
 app.get('/:articlename',function(req,res){
     var articlename=req.params.articlename;
-    res.send('The requested page is not available on this domain further');
-    
+    res.send('Your comment has been saved!');
+    comment=articlename;
 });
 app.get('/ui/page1.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'page1.js'));
