@@ -7,7 +7,7 @@ var response;
 var comment=document.getElementById('namelist');
 var request=new XMLHttpRequest();
 request.onreadystatechange=function(){
-  if(request.readyState===XMLHttpRequest.Done){
+  if(request.readyState==XMLHttpRequest.Done){
        response=request.responseText;
           var arrayof=JSON.parse(response);
           for(var i=0 ; i<response.length(); i++)
