@@ -22,7 +22,7 @@ app.get('/page1',function(req,res){
 });
 app.get('/comment/:articlename',function(req,res){
     var articlename=req.params.articlename;
-    res.send('Your comment has been saved!');
+    res.send(articlename);
     comment=articlename;
 });
 app.get('/ui/page1.js', function (req, res) {
