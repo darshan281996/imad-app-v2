@@ -16,6 +16,10 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
+app.get('/page1',function(req,res){
+   // var articlename=req.params.articlename;
+    res.send('The requested page is under construction');
+});
 app.get('/:articlename',function(req,res){
     var articlename=req.params.articlename;
     res.send('The requested page is not available on this domain further');
