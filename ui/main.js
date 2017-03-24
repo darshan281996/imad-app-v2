@@ -7,9 +7,9 @@ var response;
 var list;
 var arrayof=[];
 var comment=document.getElementById('namelist');
-var request=new XMLHttpRequest();
-request.onreadystatechange=function(){
-  if(request.readyState === XMLHttpRequest.DONE){
+var getdata=new XMLHttpRequest();
+getdata.onreadystatechange=function(){
+  if(getdata.readyState === XMLHttpRequest.DONE){
        response=request.responseText;
            arrayof=JSON.parse(response);
           for(var i=0 ; i<arrayof.length(); i++)
