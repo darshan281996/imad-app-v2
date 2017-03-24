@@ -20,9 +20,11 @@ app.get('/page1',function(req,res){
    // var articlename=req.params.articlename;
      res.sendFile(path.join(__dirname, 'ui', 'page1.html'));
 });
+var comments=[];
 app.get('/comment/:articlename',function(req,res){
     var articlename=req.params.articlename;
-    res.send(articlename);
+    comments.push(articlename);
+    res.send(JSON.stringify(comments));
     comment=articlename;
 });
 app.get('/ui/page1.js', function (req, res) {
