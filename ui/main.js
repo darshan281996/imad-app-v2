@@ -5,12 +5,13 @@ button.addEventListener("click",function(){
 });
 var response;
 var list;
+var arrayof[];
 var comment=document.getElementById('namelist');
 var request=new XMLHttpRequest();
 request.onreadystatechange=function(){
   if(request.readyState === XMLHttpRequest.DONE){
        response=request.responseText;
-          var arrayof[]=JSON.parse(response);
+           arrayof=JSON.parse(response);
           for(var i=0 ; i<arrayof.length(); i++)
           {
               list=list+"<li>"+arrayof[i]+"</li>";
