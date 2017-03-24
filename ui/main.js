@@ -8,7 +8,7 @@ var comment=document.getElementById('lastcomment');
 var request=new XMLHttpRequest();
 request.onreadystatechange=function(){
   if(request.readyState===XMLHttpRequest.Done){
-      if(request.status===200){
+      if(request.status>=200){
           response=request.responseText;
           comment.innerHTML=response;
           console.log('request successful!');
