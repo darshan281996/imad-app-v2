@@ -11,7 +11,7 @@ request.onreadystatechange=function(){
   if(request.readyState === XMLHttpRequest.DONE){
        response=request.responseText;
           var arrayof=JSON.parse(response);
-          for(var i=0 ; i<response.length(); i++)
+          for(var i=0 ; i<arrayof.length(); i++)
           {
               list=list+"<li>"+arrayof[i]+"</li>";
           }
