@@ -10,6 +10,12 @@ request.onreadystatechange=function(){
   if(request.readyState===XMLHttpRequest.Done){
       if(request.status===200){
           response=request.responseText;
+          var arrayof=JSON.parse(response);
+          for(var i=0 ; i<response.length ; i++)
+          {
+              list=list+"<li>"+arrayof[i]+"</li>";
+          }
+          
           comment.innerHTML=response;
           console.log('request successful!');
       }
