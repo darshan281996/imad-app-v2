@@ -11,6 +11,7 @@ request.onreadystatechange=function(){
       if(request.status===200){
           response=request.responseText;
           comment.innerHTML=response;
+          console.log('request successful!');
       }
       
   }  
