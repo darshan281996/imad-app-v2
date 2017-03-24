@@ -4,7 +4,7 @@ button.addEventListener("click",function(){
     window.location.href="page1";
 });
 var response;
-var comment=document.getElementById('lastcomment');
+var comment=document.getElementById('namelist');
 var request=new XMLHttpRequest();
 request.onreadystatechange=function(){
   if(request.readyState===XMLHttpRequest.Done){
