@@ -16,7 +16,7 @@ request.onreadystatechange=function(){
               list=list+"<li>"+arrayof[i]+"</li>";
           }
           
-          comment.innerHTML=response;
+          comment.innerHTML=list;
           console.log('request successful!');
       }
       
