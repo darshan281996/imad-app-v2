@@ -8,8 +8,7 @@ var comment=document.getElementById('namelist');
 var request=new XMLHttpRequest();
 request.onreadystatechange=function(){
   if(request.readyState===XMLHttpRequest.Done){
-      if(request.status==200){
-          response=request.responseText;
+       response=request.responseText;
           var arrayof=JSON.parse(response);
           for(var i=0 ; i<response.length ; i++)
           {
@@ -18,6 +17,8 @@ request.onreadystatechange=function(){
           
           comment.innerHTML=list;
           console.log('request successful!');
+      if(request.status==200){
+         console.log('request successful!');
       }
       
   }};  
