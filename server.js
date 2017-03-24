@@ -18,7 +18,7 @@ app.get('/ui/main.js', function (req, res) {
 });
 app.get('/:articlename',function(req,res){
     var articlename=req.params.articlename;
-    res.send('The requested page is not available on this site');
+    res.send('The requested page is not available on this domain further');
     
 });
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
