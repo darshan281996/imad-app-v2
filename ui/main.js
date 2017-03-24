@@ -5,7 +5,7 @@ button.addEventListener("click",function(){
 });
 var response;
 var list;
-var arrayof[];
+var arrayof=[];
 var comment=document.getElementById('namelist');
 var request=new XMLHttpRequest();
 request.onreadystatechange=function(){
