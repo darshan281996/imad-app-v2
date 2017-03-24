@@ -1,5 +1,5 @@
 console.log('Loaded!');
 var button=document.getElementById("page1_button");
 button.addEventListener("click",function(){
-    alert("you clicked me!");
+    window.location.href="www.google.com";
 });
