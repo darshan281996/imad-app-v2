@@ -20,7 +20,7 @@ app.get('/page1',function(req,res){
    // var articlename=req.params.articlename;
      res.sendFile(path.join(__dirname, 'ui', 'page1.html'));
 });
-app.get('/:articlename',function(req,res){
+app.get('/comment/:articlename',function(req,res){
     var articlename=req.params.articlename;
     res.send('Your comment has been saved!');
     comment=articlename;
