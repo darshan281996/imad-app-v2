@@ -4,6 +4,7 @@ button.addEventListener("click",function(){
     window.location.href="page1";
 });
 var response;
+var list;
 var comment=document.getElementById('namelist');
 var request=new XMLHttpRequest();
 request.onreadystatechange=function(){
