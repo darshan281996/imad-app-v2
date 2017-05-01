@@ -10,6 +10,7 @@ var comment=document.getElementById('namelist');
 var getdata=new XMLHttpRequest();
 getdata.onreadystatechange=function(){
   if(getdata.readyState === XMLHttpRequest.DONE){
+      alert('starting request');
        response=getdata.responseText;
            arrayof=JSON.parse(response);
           for(var i=0 ; i<arrayof.length(); i++)
@@ -20,6 +21,7 @@ getdata.onreadystatechange=function(){
           comment.innerHTML=list;
           console.log('request successful!');
       if(request.status === 200){
+          alert('request successful');
          console.log('request successful!');
       }
       
