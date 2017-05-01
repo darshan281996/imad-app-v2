@@ -15,6 +15,7 @@ getdata.onreadystatechange=function(){
            arrayof=JSON.parse(response);
           for(var i=0 ; i<arrayof.length(); i++)
           {
+              alert('inside for');
               list=list+"<li>"+arrayof[i]+"</li>";
           }
           
