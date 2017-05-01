@@ -19,6 +19,7 @@ getdata.onreadystatechange=function(){
           }
           
           comment.innerHTML=list;
+          alert(' request successfully done');
           console.log('request successful!');
       if(request.status === 200){
           alert('request successful');
