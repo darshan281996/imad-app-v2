@@ -28,6 +28,6 @@ getdata.onreadystatechange=function(){
       }
       
   }};  
-   getdata.open('GET',"http://darshan281996.imad.hasura-app.io/comment/hello",true);
+   getdata.open('GET',"https://darshan281996.imad.hasura-app.io/comment/hello",true);
    getdata.send(null);
    console.log('making request');
