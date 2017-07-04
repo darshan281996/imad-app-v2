@@ -1,7 +1,7 @@
 console.log('Loaded!');
 var button=document.getElementById("page1_button");
 button.addEventListener("click",function(){
-    window.location.href="page1";
+    window.location.href="page2";
 });
 var response;
 var list;
