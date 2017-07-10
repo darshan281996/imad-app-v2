@@ -9,7 +9,7 @@ var arrayof=[];
 var comment=document.getElementById('list');
 var getdata=new XMLHttpRequest();
 getdata.onreadystatechange=function(){
-  if(getdata.readyState === 4){
+  if(getdata.readyState == 4){
       
        response=getdata.responseText;
            arrayof=JSON.parse(response);
@@ -28,6 +28,6 @@ getdata.onreadystatechange=function(){
       }
       
   }};  
-   getdata.open('GET',"darshan281996.imad.hasura-app.io/comment/",true);
+   getdata.open('GET',"darshan281996.imad.hasura-app.io/comment",true);
    getdata.send(null);
   alert('making request');
