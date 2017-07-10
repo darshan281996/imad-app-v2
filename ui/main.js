@@ -9,7 +9,7 @@ var arrayof=[];
 var comment=document.getElementById('list');
 var getdata=new XMLHttpRequest();
 getdata.onreadystatechange=function(){
-  if(getdata.readyState == 4){
+  if(getdata.readyState == 4 && getdata.status ==200){
       
        response=getdata.responseText;
            arrayof=JSON.parse(response);
@@ -21,11 +21,7 @@ getdata.onreadystatechange=function(){
           
           comment.innerHTML=list;
           alert(' request successfully done');
-          console.log('request successful!');
-      if(getdata.status === 200){
-          alert('request successful');
-         console.log('request successful!');
-      }
+          console.log('request successful!')
       
   }};  
    getdata.open('GET',"darshan281996.imad.hasura-app.io/comment",true);
