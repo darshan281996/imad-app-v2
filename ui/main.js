@@ -6,7 +6,7 @@ button.addEventListener("click",function(){
 var response;
 var list;
 var arrayof=[];
-var comment=document.getElementById('namelist');
+var comment=document.getElementById('list');
 var getdata=new XMLHttpRequest();
 getdata.onreadystatechange=function(){
   if(getdata.readyState === 4){
