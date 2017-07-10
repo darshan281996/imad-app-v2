@@ -26,5 +26,5 @@ getdata.onreadystatechange=function(){
   }};  
    getdata.open('GET',"darshan281996.imad.hasura-app.io/comment",true);
    getdata.send(null);
-   alert(getdata.status);
+  // alert(getdata.status);
   alert('making request');
