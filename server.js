@@ -29,7 +29,7 @@ var comments=[];
 app.get('/comment/:articlename',function(req,res){
     var articlename=req.params.articlename;
     comments.push(articlename);
-    res.send(JSON.stringify(comments));
+    res.send(" omment saved");
 });
 app.get('/comment',function(req,res){
     res.send(JSON.stringify(comments));
