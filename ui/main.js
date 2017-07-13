@@ -21,7 +21,7 @@ getdata.onreadystatechange=function(){
           
           comment.innerHTML=list;
           alert(' request successfully done');
-          console.log('request successful!')
+          console.log('request successful!');
       
   }};  
    getdata.open('GET',"darshan281996.imad.hasura-app.io/comment",true);
