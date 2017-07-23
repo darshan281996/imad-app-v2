@@ -26,13 +26,14 @@ app.get('/page2',function(req,res){
      res.sendFile(path.join(__dirname, 'ui', 'page2.html'));
 });
 var comments=[];
+
+app.get('/comment',function(req,res){
+    res.send(JSON.stringify(comments));
+});
 app.get('/comment/:articlename',function(req,res){
     var articlename=req.params.articlename;
     comments.push(articlename);
     res.send(" omment saved");
-});
-app.get('/comment',function(req,res){
-    res.send(JSON.stringify(comments));
 });
 app.get('/ui/page1.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'page1.js'));
